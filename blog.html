@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Article</title>
+
+    <link rel="stylesheet" href="./blog.css">
+</head>
+<body>
+    <main>
+        <div class="blog-title">
+            <h1>Blog : Article</h1>
+        </div>
+
+        <div class="latest-article">
+            <h2>Latest</h2>
+            <div class="article-container">
+                <div class="article-content">
+                    <p>Front-end</p>
+                    <div class="article-posted">
+                        <img src="./img/article 1.jpg" alt="">
+                        <a href="https://www.google.com/" target="_blank">Exploring Modern Front-End Frameworks: A Comparative Analysis</a>
+                    </div>
+                </div>
+
+                <div class="article-content">
+                    <p>Back-end</p>
+                    <div class="article-posted">
+                        <img src="./img/article 2.jpg" alt="">
+                        <a href="">Building Robust APIs with Node.js and Express</a>
+                    </div>
+                </div>
+
+                <div class="article-content">
+                    <p>UI/UX Design</p>
+                    <div class="article-posted">
+                        <img src="./img/article 3.jpg" alt="">
+                        <a href="">Responsive Web Design: Crafting Sites for Every Device</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="listed-article">
+            <h2>Listed Article</h2>
+
+            <div class="search-filter">
+                <div class="search-container">
+                    <label for="search">Article:</label>
+                    <input type="text" id="search" placeholder="Search">
+                </div>
+                
+                <div class="filter-container">
+                    <label for="categoryFilter">Category:</label>
+                    <select id="categoryFilter">
+                      <option value="all">All</option>
+                      <option value="Front-end">Front-end</option>
+                      <option value="Back-end">Back-end</option>
+                      <option value="UI/UX Design">UI/UX Design</option>
+                      <option value="Uncategorized">Uncategorized</option>
+                    </select>
+                </div>
+            </div>
+
+            <table id="myTable">
+                <tr class="header">
+                  <th style="width:60%;">Article</th>
+                  <th style="width:40%;">Category</th>
+                </tr>
+                <tr>
+                  <td><a href="https://www.google.com/" target="_blank">Exploring Modern Front-End Frameworks: A Comparative Analysis</a></td>
+                  <td>Front-end</td>
+                </tr>
+                <tr>
+                  <td><a href="">Building Robust APIs with Node.js and Express</a></td>
+                  <td>Back-end</td>
+                </tr>
+                <tr>
+                  <td><a href="">The Psychology of Color in Web Design: How to Influence User Behavior</a></td>
+                  <td>UI/UX Design</td>
+                </tr>
+                <tr>
+                  <td><a href="">The Art of Debugging: Tips for Troubleshooting Code</a></td>
+                  <td>Uncategorized</td>
+                </tr>
+                </tr>
+              </table>
+        </div>
+    </main>
+
+    <script src="./blog.js"></script>
+</body>
+</html>
